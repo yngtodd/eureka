@@ -45,7 +45,7 @@ impl<W: io::Write + termcolor::WriteColor> Print for Printer<W> {
             "#".repeat(60)
         );
         let row0 = "";
-        let row1 = "This tool requires you to have a repository with a README.md";
+        let row1 = "This tool requires you to have a repository with a README.rst";
         let row2 = "in the root folder. The markdown file is where your ideas";
         let row3 = "will be stored. ";
         let row4 = "";

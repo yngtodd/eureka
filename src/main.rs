@@ -107,7 +107,7 @@ where
     if !is_first_time_run(fh) {
         printer.print_input_header(">> Idea summary");
         let commit_msg = reader.read();
-        let readme_path = format!("{}/README.md", repo_path);
+        let readme_path = format!("{}/README.rst", repo_path);
 
         match open_editor(&editor_path, &readme_path) {
             Ok(_) => {
@@ -228,7 +228,7 @@ fn open_editor(bin_path: &String, file_path: &String) -> io::Result<()> {
 }
 
 fn open_pager_less(repo_config_file: String) -> io::Result<()> {
-    let readme_path = format!("{}/README.md", repo_config_file);
+    let readme_path = format!("{}/README.rst", repo_config_file);
     match Command::new(less()).arg(&readme_path).status() {
         Ok(_) => Ok(()),
         Err(e) => {

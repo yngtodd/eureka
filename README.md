@@ -11,7 +11,7 @@ continue working.
 ![demo](assets/demo.gif)
 
 ## Required Setup
-`eureka` requires a git repository with a `README.md` in the root folder. This is the default
+`eureka` requires a git repository with a `README.rst` in the root folder. This is the default
 structure when you create an empty repository with a readme on GitHub, so it's easy to start using
 it. And since it's your own repository you can make it private to keep your ideas secret.
 
